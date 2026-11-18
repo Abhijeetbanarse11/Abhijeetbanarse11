@@ -189,7 +189,20 @@
       footer .container { flex-direction:column;align-items:flex-start;gap:6px; }
     }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; }*,*:before,*:after {transition:none!important;} }
-  </style>
+  
+    .cert-intro{max-width:710px;color:var(--body);font-size:18px;margin:12px 0 32px}
+    .cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .cert-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:27px;min-height:190px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+    .cert-brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:14px;letter-spacing:.01em}
+    .cert-mark{width:35px;height:35px;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-size:13px;font-weight:800}
+    .cert-mark.by{background:#e9f8ff;color:#00a8dc}.cert-mark.sn{background:#e7f4ed;color:#147e5b}.cert-mark.ai{background:#f2ece6;color:#292524}
+    .cert-card h3{font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:1.25;margin:8px 0 0;font-weight:600}
+    .cert-card p{margin:0;color:var(--body);font-size:14px;line-height:1.5}
+    .cert-extra{margin-top:21px;color:var(--body);font-size:15px;line-height:1.7}
+    .cert-extra strong{color:var(--ink)}
+    .cert-link{display:inline-block;margin-top:19px;color:var(--coral-dark);font-weight:650;text-decoration:underline;text-underline-offset:4px}
+    @media(max-width:760px){.cert-grid{grid-template-columns:1fr}.cert-card{min-height:0;padding:22px}.cert-intro{font-size:16px}}
+</style>
 </head>
 <body>
   <a class="sr-only" href="#home">Skip to main content</a>
@@ -200,6 +213,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#work">What I Do</a>
+        <a href="#certifications">Certifications</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -275,10 +289,27 @@
       </div>
     </section>
 
+    
+    <section id="certifications" class="content-section">
+      <div class="container">
+        <p class="section-kicker">03 / Certifications</p>
+        <h2>Professional<br>credentials.</h2>
+        <p class="cert-intro">Specialist training in supply chain planning and warehouse architecture, alongside IT leadership and emerging AI development.</p>
+        <div class="cert-grid">
+          <article class="cert-card"><div class="cert-brand"><span class="cert-mark by" aria-hidden="true">BY</span>Blue Yonder</div><h3>WMS Architect</h3><p>8707-E · WMS/TMS v2019.1 · April 2024</p></article>
+          <article class="cert-card"><div class="cert-brand"><span class="cert-mark by" aria-hidden="true">BY</span>Blue Yonder</div><h3>Enterprise Supply Planning</h3><p>7435-E · Level 1 Certification Curriculum Exam · February 2024</p></article>
+          <article class="cert-card"><div class="cert-brand"><span class="cert-mark sn" aria-hidden="true">S</span>ServiceNow</div><h3>IT Leadership</h3><p>Professional Certificate · March 2024</p></article>
+          <article class="cert-card"><div class="cert-brand"><span class="cert-mark ai" aria-hidden="true">AI</span>Anthropic</div><h3>Claude Certified Developer</h3><p>Foundations · September 2026 · Expires September 2027</p></article>
+        </div>
+        <p class="cert-extra"><strong>Additional Blue Yonder certifications:</strong> ESP Installation (March 2023) · MOCA Configuration, 7607 (April 2024).</p>
+        <a class="cert-link" href="https://www.linkedin.com/in/abhijeet-banarse-69523228/" target="_blank" rel="noopener noreferrer">View certifications on LinkedIn</a>
+      </div>
+    </section>
+
     <section id="experience" class="content-section">
       <div class="container experience-layout">
         <div>
-          <p class="section-kicker">03 / Experience</p>
+          <p class="section-kicker">04 / Experience</p>
           <h2>Some of the<br>work behind it.</h2>
           <p class="experience-aside">A few examples of where I've put these skills to use. I prefer talking about actual work rather than a long list of buzzwords.</p>
         </div>
@@ -306,7 +337,7 @@
     <section id="beyond" class="content-section muted-background">
       <div class="container elsewhere">
         <div>
-          <p class="section-kicker">04 / Beyond work</p>
+          <p class="section-kicker">05 / Beyond work</p>
           <h2>Not everything<br>is about systems.</h2>
           <div class="prose">
             <p>Before moving to Belgium, I also ran A&amp;T Photography in Pune, photographing more than 300 weddings and events. It gave me a different way to see people, stories and details.</p>
@@ -319,7 +350,7 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <p class="section-kicker">05 / Contact</p>
+        <p class="section-kicker">06 / Contact</p>
         <h2>Let's connect.</h2>
         <p>I'm always happy to connect with people working in supply chain technology, enterprise systems and solution architecture—or simply exchange ideas.</p>
         <div class="contact-actions">
